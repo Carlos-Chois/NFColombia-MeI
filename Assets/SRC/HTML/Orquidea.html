@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Icon-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <!--Swiper-->
+    <link rel="stylesheet" href="../CSS/swiper-bundle.min.css">
+
+    <!--Style-->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!--Realidad Aumentada-->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <link rel="icon" href="../../IMG/NFColombia Logo.png">
+    <title>NFColombia</title>
+</head>
+<body>
+    
+    <!--HEADER-->
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <div class="nav__btns">
+                
+                <!--Theme-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+            </div>
+
+            <a href="../../../index.html" class="nav__logo">NFColombia</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+
+                    <li class="nav__item">
+                        <a href="#desc" class="nav__link active-link">
+                            <i class="uil uil-notes nav__icon"></i>Información
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#model" class="nav__link">
+                            <i class="uil uil-cube nav__icon"></i>Modelo 3D
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>      
+
+            <div class="nav__btns">
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main class="main">
+
+    <!--MODELOS-->
+
+        <section class="desc container" id="desc">
+            <div class="imagen modelo">
+                <img src="../../IMG/Orquidea.png" alt="Orquidea">
+            </div>
+            <div class="desc__content">
+    
+                <h1 class="desc__title title"><span>Orquidea</span></h1>
+                <h1 class="desc__sub-title">Nombre Científico: <span>Orchidaceae</span></h1>
+
+                <h2 class="desc__sub-title">Descripción</h2>
+
+                <p class="desc__parr">La orquídea es una planta que se caracteriza por su flor de tres sépalos: 2 pétalos y un lobelo donde se posa el insecto polinizador.
+                    Además, su estructura reproductiva, llamada ginostemo o comúnmente columna, se encuentra descubierta en medio de sus sépalos.</p>
+
+                <h2 class="desc__sub-title">Datos</h2>
+                <p>Perteneciente a una de las familias con mayor numero de especies, existen algunas orquideas que pueden medir casi 10 metros.</p>
+            </div>
+        </section>
+
+        <section class="model container" id="model">
+            <model-viewer bounds="tight" enable-pan src="../../MODEL/Orquidea.glb" ar
+                ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="neutral"
+                poster="poster.webp" shadow-intensity="1" auto-rotate>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button 
+                slot="ar-button" id="ar-button">
+                <i class="uil uil-cube nav__icon"></i>Realidad Aumentada
+                </button>
+            </model-viewer>
+        </section>
+
+    <!--END MAIN-->
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                
+                <div class="footer__data">
+                    <h1 class="footer__title">NFColombia</h1>
+                    <span class="footer_subtitle">Moviento e interccion 2022-1</span>
+                </div>
+
+            </div>
+            <p class="footer__copy">Bogota D.C. | Colombia<br>2022</p>
+        </div>
+    </footer>
+
+
+    <!--SCROLL TOP-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--SWIPER-->
+    <script src="../JS/swiper-bundle.min.js"></script>
+    <!--JS-->
+    <script src="../JS/main.js"></script>
+</body>
+</html>
