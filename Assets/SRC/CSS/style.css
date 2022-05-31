@@ -512,6 +512,10 @@ model-viewer button{
     text-align: center;
 }
 
+model-viewer button i{
+    padding-right: 10px;
+}
+
 .model__img{
     width: 30px;
 }
