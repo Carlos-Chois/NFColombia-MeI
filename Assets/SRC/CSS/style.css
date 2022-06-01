@@ -504,18 +504,14 @@ model-viewer{
     width: 90vw;
 }
 
-/*
 model-viewer button{
-    position: fixed;
-    bottom: 0;
-
     width: 100%;
     text-align: center;
 }
 
 model-viewer button i{
     padding-right: 10px;
-}*/
+}
 
 .model__img{
     width: 30px;
