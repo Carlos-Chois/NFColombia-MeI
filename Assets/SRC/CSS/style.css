@@ -504,6 +504,7 @@ model-viewer{
     width: 90vw;
 }
 
+/*
 model-viewer button{
     position: fixed;
     bottom: 0;
@@ -514,7 +515,7 @@ model-viewer button{
 
 model-viewer button i{
     padding-right: 10px;
-}
+}*/
 
 .model__img{
     width: 30px;
